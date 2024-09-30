@@ -1,0 +1,24 @@
+1. Why did you choose the tools, libraries, and language you used for the coding exercise?
+I chose FastAPI as the web framework due to its design tailored for rapid API development with high performance. 
+Its ability to automatically generate comprehensive documentation is a significant advantage for both development and testing phases. 
+Python was selected as the programming language because of its readability and simplicity, which facilitate quick prototyping and development. 
+Furthermore, the Pydantic library was employed for data validation, ensuring the integrity of input data and providing a clean interface for defining data models.
+
+2. What are the advantages and disadvantages of your solution?
+Advantages:
+- FastAPI delivers exceptional performance and scalability, making it well-suited for applications with high traffic.
+- The automatic generation of API documentation allows developers to easily understand and interact with the API, enhancing usability.
+- Utilizing Pydantic for data validation minimizes the likelihood of errors and guarantees that the application correctly handles input data.
+- I aimed to optimize resource usage by minimizing memory and processing time for each request.
+
+Disadvantages:
+- Despite its growing popularity, FastAPI may not yet boast the extensive community support or resources available with more established frameworks like Flask or Django.
+- The in-memory data storage utilized in this solution lacks persistence, meaning that data will be lost upon server restart.
+- The necessity to iterate through every transaction for each spend request is inefficient. Additionally, sorting the list of transactions upon each addition can be time-consuming.
+- While I chose not to remove transactions that have been spent to reduce code complexity, doing so could enhance performance and efficiency.
+
+3. What has been a favorite school/personal project thus far? What about it that challenged you?
+One of my favorite projects involved developing a backend for a ridesharing application tailored for college students. 
+The challenge involved integrating diverse components such as user authentication, point tracking, and ride management. 
+I had to ensure the application was both efficient and secure, requiring a thorough understanding of backend development and database management principles. 
+Moreover, collaborating with a team taught me the importance of effective communication and teamwork, which significantly contributed to my professional growth.
