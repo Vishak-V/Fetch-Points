@@ -12,7 +12,7 @@ balances: Dict[str, int] = {}
 total_available_points: int = 0
 transactions_history: List[schemas.Transaction]=[]
 
-app.get("/")
+@app.get("/")
 def root():
     return {"message": "Hello Fetch Engineer!"}
 
