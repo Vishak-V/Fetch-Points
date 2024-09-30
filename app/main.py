@@ -56,8 +56,8 @@ def spend_points(spend_request: schemas.SpendRequest):
     points_spent: Dict[str, int] = {}
 
     for transaction in transactions:
-        if points_to_spend <= 0:
-            break
+        if points_to_spend <= 0 and transaction.points > 0:
+            continue
         
         payer = transaction.payer
         points_in_transaction = transaction.points
