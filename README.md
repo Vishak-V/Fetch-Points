@@ -21,7 +21,7 @@ The Points Management API is a FastAPI-based application designed to manage tran
 2. (Optional) Create a virtual environment:
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scriptsctivate`
+   source venv/bin/activate  
    ```
 3. Install the required packages:
    ```bash
