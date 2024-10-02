@@ -56,6 +56,7 @@ def spend_points(spend_request: schemas.SpendRequest):
     points_spent: Dict[str, int] = {}
 
     for transaction in transactions:
+        #FIXME: This skips the transactions instead we need to comeback to these transactions
         if points_to_spend <= 0 and transaction.points >= 0:
             continue
         
